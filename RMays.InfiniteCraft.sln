@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34024.191
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RMays.InfiniteCraft", "RMays.InfiniteCraft\RMays.InfiniteCraft.csproj", "{A92B7595-67D7-4DFC-9F81-941D7A4032CF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RMays.InfiniteCraft.Console", "RMays.InfiniteCraft.Console\RMays.InfiniteCraft.Console.csproj", "{FFB6DDE3-26CB-46F8-BD77-B152B1C368BA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RMays.InfiniteCraft.Business", "RMays.InfiniteCraft.Business\RMays.InfiniteCraft.Business.csproj", "{F784EF6D-190A-4316-9299-6A993927C5F4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RMays.InfiniteCraft.Business.Tests", "RMays.InfiniteCraft.Business.Tests\RMays.InfiniteCraft.Business.Tests.csproj", "{F2DE3AD6-0224-418C-BCB3-49A9A2A7823D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A92B7595-67D7-4DFC-9F81-941D7A4032CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A92B7595-67D7-4DFC-9F81-941D7A4032CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A92B7595-67D7-4DFC-9F81-941D7A4032CF}.Debug|x64.ActiveCfg = Debug|x64
+		{A92B7595-67D7-4DFC-9F81-941D7A4032CF}.Debug|x64.Build.0 = Debug|x64
+		{A92B7595-67D7-4DFC-9F81-941D7A4032CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A92B7595-67D7-4DFC-9F81-941D7A4032CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A92B7595-67D7-4DFC-9F81-941D7A4032CF}.Release|x64.ActiveCfg = Release|x64
+		{A92B7595-67D7-4DFC-9F81-941D7A4032CF}.Release|x64.Build.0 = Release|x64
+		{FFB6DDE3-26CB-46F8-BD77-B152B1C368BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFB6DDE3-26CB-46F8-BD77-B152B1C368BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFB6DDE3-26CB-46F8-BD77-B152B1C368BA}.Debug|x64.ActiveCfg = Debug|x64
+		{FFB6DDE3-26CB-46F8-BD77-B152B1C368BA}.Debug|x64.Build.0 = Debug|x64
+		{FFB6DDE3-26CB-46F8-BD77-B152B1C368BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFB6DDE3-26CB-46F8-BD77-B152B1C368BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFB6DDE3-26CB-46F8-BD77-B152B1C368BA}.Release|x64.ActiveCfg = Release|x64
+		{FFB6DDE3-26CB-46F8-BD77-B152B1C368BA}.Release|x64.Build.0 = Release|x64
+		{F784EF6D-190A-4316-9299-6A993927C5F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F784EF6D-190A-4316-9299-6A993927C5F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F784EF6D-190A-4316-9299-6A993927C5F4}.Debug|x64.ActiveCfg = Debug|x64
+		{F784EF6D-190A-4316-9299-6A993927C5F4}.Debug|x64.Build.0 = Debug|x64
+		{F784EF6D-190A-4316-9299-6A993927C5F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F784EF6D-190A-4316-9299-6A993927C5F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F784EF6D-190A-4316-9299-6A993927C5F4}.Release|x64.ActiveCfg = Release|x64
+		{F784EF6D-190A-4316-9299-6A993927C5F4}.Release|x64.Build.0 = Release|x64
+		{F2DE3AD6-0224-418C-BCB3-49A9A2A7823D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2DE3AD6-0224-418C-BCB3-49A9A2A7823D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2DE3AD6-0224-418C-BCB3-49A9A2A7823D}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{F2DE3AD6-0224-418C-BCB3-49A9A2A7823D}.Debug|x64.Build.0 = Debug|Any CPU
+		{F2DE3AD6-0224-418C-BCB3-49A9A2A7823D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2DE3AD6-0224-418C-BCB3-49A9A2A7823D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2DE3AD6-0224-418C-BCB3-49A9A2A7823D}.Release|x64.ActiveCfg = Release|Any CPU
+		{F2DE3AD6-0224-418C-BCB3-49A9A2A7823D}.Release|x64.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7BF1E399-BC28-4BB7-8F59-34F527B4EFF1}
+	EndGlobalSection
+EndGlobal
