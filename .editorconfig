@@ -1,0 +1,4 @@
+﻿[*.cs]
+
+# NUnit2002: Consider using Assert.That(expr, Is.False) instead of Assert.IsFalse(expr)
+dotnet_diagnostic.NUnit2002.severity = none

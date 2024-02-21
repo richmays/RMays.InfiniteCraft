@@ -9,7 +9,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RMays.InfiniteCraft.Console
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RMays.InfiniteCraft.Business", "RMays.InfiniteCraft.Business\RMays.InfiniteCraft.Business.csproj", "{F784EF6D-190A-4316-9299-6A993927C5F4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RMays.InfiniteCraft.Business.Tests", "RMays.InfiniteCraft.Business.Tests\RMays.InfiniteCraft.Business.Tests.csproj", "{F2DE3AD6-0224-418C-BCB3-49A9A2A7823D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RMays.InfiniteCraft.Business.Tests", "RMays.InfiniteCraft.Business.Tests\RMays.InfiniteCraft.Business.Tests.csproj", "{F2DE3AD6-0224-418C-BCB3-49A9A2A7823D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1BC2353E-70A4-4DBB-8B50-58C5340F023C}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
