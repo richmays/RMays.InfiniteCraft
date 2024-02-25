@@ -29,12 +29,15 @@
         private void InitializeComponent()
         {
             splitContainer1 = new SplitContainer();
-            btnWater = new Button();
-            btnFire = new Button();
-            btnWind = new Button();
+            btnGo = new Button();
             btnEarth = new Button();
+            btnWind = new Button();
+            btnFire = new Button();
+            btnWater = new Button();
+            txtLog = new TextBox();
             ((System.ComponentModel.ISupportInitialize)splitContainer1).BeginInit();
             splitContainer1.Panel1.SuspendLayout();
+            splitContainer1.Panel2.SuspendLayout();
             splitContainer1.SuspendLayout();
             SuspendLayout();
             // 
@@ -46,13 +49,55 @@
             // 
             // splitContainer1.Panel1
             // 
+            splitContainer1.Panel1.Controls.Add(btnGo);
             splitContainer1.Panel1.Controls.Add(btnEarth);
             splitContainer1.Panel1.Controls.Add(btnWind);
             splitContainer1.Panel1.Controls.Add(btnFire);
             splitContainer1.Panel1.Controls.Add(btnWater);
+            // 
+            // splitContainer1.Panel2
+            // 
+            splitContainer1.Panel2.Controls.Add(txtLog);
             splitContainer1.Size = new Size(800, 450);
             splitContainer1.SplitterDistance = 266;
             splitContainer1.TabIndex = 0;
+            // 
+            // btnGo
+            // 
+            btnGo.Location = new Point(70, 130);
+            btnGo.Name = "btnGo";
+            btnGo.Size = new Size(75, 23);
+            btnGo.TabIndex = 4;
+            btnGo.Text = "GO";
+            btnGo.UseVisualStyleBackColor = true;
+            btnGo.Click += btnGo_Click;
+            // 
+            // btnEarth
+            // 
+            btnEarth.Location = new Point(93, 41);
+            btnEarth.Name = "btnEarth";
+            btnEarth.Size = new Size(75, 23);
+            btnEarth.TabIndex = 3;
+            btnEarth.Text = "Earth";
+            btnEarth.UseVisualStyleBackColor = true;
+            // 
+            // btnWind
+            // 
+            btnWind.Location = new Point(12, 41);
+            btnWind.Name = "btnWind";
+            btnWind.Size = new Size(75, 23);
+            btnWind.TabIndex = 2;
+            btnWind.Text = "Wind";
+            btnWind.UseVisualStyleBackColor = true;
+            // 
+            // btnFire
+            // 
+            btnFire.Location = new Point(93, 12);
+            btnFire.Name = "btnFire";
+            btnFire.Size = new Size(75, 23);
+            btnFire.TabIndex = 1;
+            btnFire.Text = "Fire";
+            btnFire.UseVisualStyleBackColor = true;
             // 
             // btnWater
             // 
@@ -64,32 +109,14 @@
             btnWater.UseVisualStyleBackColor = true;
             btnWater.Click += button1_Click;
             // 
-            // btnFire
+            // txtLog
             // 
-            btnFire.Location = new Point(93, 12);
-            btnFire.Name = "btnFire";
-            btnFire.Size = new Size(75, 23);
-            btnFire.TabIndex = 1;
-            btnFire.Text = "Fire";
-            btnFire.UseVisualStyleBackColor = true;
-            // 
-            // btnWind
-            // 
-            btnWind.Location = new Point(12, 41);
-            btnWind.Name = "btnWind";
-            btnWind.Size = new Size(75, 23);
-            btnWind.TabIndex = 2;
-            btnWind.Text = "Wind";
-            btnWind.UseVisualStyleBackColor = true;
-            // 
-            // btnEarth
-            // 
-            btnEarth.Location = new Point(93, 41);
-            btnEarth.Name = "btnEarth";
-            btnEarth.Size = new Size(75, 23);
-            btnEarth.TabIndex = 3;
-            btnEarth.Text = "Earth";
-            btnEarth.UseVisualStyleBackColor = true;
+            txtLog.Dock = DockStyle.Fill;
+            txtLog.Location = new Point(0, 0);
+            txtLog.Multiline = true;
+            txtLog.Name = "txtLog";
+            txtLog.Size = new Size(530, 450);
+            txtLog.TabIndex = 0;
             // 
             // Form1
             // 
@@ -100,6 +127,8 @@
             Name = "Form1";
             Text = "Form1";
             splitContainer1.Panel1.ResumeLayout(false);
+            splitContainer1.Panel2.ResumeLayout(false);
+            splitContainer1.Panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)splitContainer1).EndInit();
             splitContainer1.ResumeLayout(false);
             ResumeLayout(false);
@@ -112,5 +141,7 @@
         private Button btnWind;
         private Button btnFire;
         private Button btnWater;
+        private Button btnGo;
+        private TextBox txtLog;
     }
 }
