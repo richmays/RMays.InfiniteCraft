@@ -24,17 +24,28 @@ namespace RMays.InfiniteCraft
 
         private void btnGo_Click(object sender, EventArgs e)
         {
-            // Do a cross...thing for all the words.
-            List<Tuple<string, string>> allWordCombos = formulaRepo.GetAllWordCombos();
-
-            // Go through each pair!
-            foreach (var item in allWordCombos)
+            Log($"Processing!  Check '{FormulasFilename}' any time.");
+            while (true)
             {
-                if (formulaRepo.FormulaExists(item.Item1, item.Item2)) continue;
+                // Do a cross...thing for all the words.
+                List<Tuple<string, string>> allWordCombos = formulaRepo.GetAllWordCombos();
+                Log($"Going through {allWordCombos.Count} combos...");
 
-                var task = Task.Run(() => formulaRepo.Mix(item.Item1, item.Item2));
-                task.Wait();
-                Log($"Mixing '{item.Item1}' and '{item.Item2}' created '{task.Result.result}'");
+                // Go through each pair!
+                foreach (var item in allWordCombos)
+                {
+                    if (formulaRepo.FormulaExists(item.Item1, item.Item2)) continue;
+
+                    var task = Task.Run(() => formulaRepo.Mix(item.Item1, item.Item2));
+                    task.Wait();
+
+                    // Log($"Mixing '{item.Item1}' and '{item.Item2}' created '{task.Result.result}'");
+                }
+
+                Log($"Done going through {allWordCombos.Count} combos.");
+
+                // For now, we finished the level; jump out.
+                return;
             }
         }
 

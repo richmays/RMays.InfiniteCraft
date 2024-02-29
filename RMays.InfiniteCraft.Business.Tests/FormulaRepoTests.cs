@@ -10,7 +10,7 @@ namespace RMays.InfiniteCraft.Business.Tests
         [Test]
         public void TryAdd_DontAllowDupes()
         {
-            IFormulaRepo formulaRepo = new FormulaRepo();
+            FormulaRepo formulaRepo = new FormulaRepo();
             bool result = formulaRepo.TryAdd("Earth", "Earth", "Mountain");
             Assert.IsTrue(result);
             result = formulaRepo.TryAdd("Earth", "Earth", "Mountain");
@@ -24,7 +24,7 @@ namespace RMays.InfiniteCraft.Business.Tests
         [Test]
         public void TryAdd_CheckForSwaps()
         {
-            IFormulaRepo formulaRepo = new FormulaRepo();
+            FormulaRepo formulaRepo = new FormulaRepo();
             bool result = formulaRepo.TryAdd("Earth", "Fire", "Volcano");
             Assert.IsTrue(result);
             result = formulaRepo.TryAdd("Fire", "Earth", "Volcano");
@@ -34,7 +34,7 @@ namespace RMays.InfiniteCraft.Business.Tests
         [Test]
         public void ShowAllFormulas()
         {
-            IFormulaRepo formulaRepo = new FormulaRepo();
+            FormulaRepo formulaRepo = new FormulaRepo();
             formulaRepo.TryAdd("Earth", "Earth", "Mountain");
             formulaRepo.TryAdd("Earth", "Fire", "Volcano");
             var repoAsString = formulaRepo.ToString();
