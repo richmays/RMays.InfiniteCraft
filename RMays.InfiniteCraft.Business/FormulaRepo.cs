@@ -180,7 +180,9 @@ namespace RMays.InfiniteCraft.Business
                 using (var requestMessage = new HttpRequestMessage(HttpMethod.Get,
                     "https:" + $"//neal.fun/api/infinite-craft/pair?first={CleanUrlParam(item1)}&second={CleanUrlParam(item2)}"))
                 {
-                    requestMessage.Headers.Add("User-Agent", @"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36");
+                    requestMessage.Headers.Add("User-Agent", @"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0");
+                    // Works, but it's old
+                    //requestMessage.Headers.Add("User-Agent", @"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36");
                     requestMessage.Headers.Add("Accept", @"*/*");
                     //requestMessage.Headers.Add("Accept-Encoding", @"gzip, deflate, br, zstd");
                     requestMessage.Headers.Add("Accept-Encoding", @"deflate, br, zstd");
